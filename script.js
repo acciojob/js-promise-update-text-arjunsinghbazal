@@ -1,7 +1,7 @@
 //your JS code here. If required.
 function rel(){
 return new Promise((reslove,reject)=>{
-	SetTimeout(
+	setTimeout(
 		()=>{
 			console.log("Hello, world!");
 		},1000);
