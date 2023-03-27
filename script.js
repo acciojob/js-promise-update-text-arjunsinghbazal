@@ -3,8 +3,11 @@ function rel(){
 return new Promise((reslove,reject)=>{
 	setTimeout(
 		()=>{
-			console.log('Hello, world!');
+			resolve('Hello, world!');
 		},1000);
 });
 }
-rel();
+rel().then((message)=>{
+	const out = document.getElementById("ouput");
+	out.textContent=message;
+});
