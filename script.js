@@ -1,6 +1,6 @@
 //your JS code here. If required.
 function rel(){
-return new Promise((reslove,reject)=>{
+return new Promise((resolve,reject)=>{
 	setTimeout(
 		()=>{
 			resolve('Hello, world!');
@@ -8,6 +8,6 @@ return new Promise((reslove,reject)=>{
 });
 }
 rel().then((message)=>{
-	const out = document.getElementById("ouput");
-	out.textContent=message;
+	const out = document.querySelector("#output");
+	out.innerText=message;
 });
